@@ -1,0 +1,123 @@
+##sir as soon as i Open the METAMASK to depoly 
+the assignment on injected web3/web3 provider
+the current window stuck##
+
+
+pragma solidity ^0.4.21 < 0.6.12;
+
+
+contract Submissionrecord{
+    string public Name;
+    uint256 public RollNo;
+    string public Status;
+    uint256 Mark1;
+    uint256 Mark2;
+    uint256 Mark3;
+    uint256 Mark4;
+    
+function Submissionrecord( string newName, uint256 newRollNo, string newStatus, uint256 newMark1,uint256 newMark2,uint256 newMark3,uint256 newMark4) public{
+
+        Name= newName;
+        
+	RollNo= newRollNo;
+        
+	Status= newStatus;
+        
+	Mark1=newMark1;
+        
+	Mark1=newMark2;
+        
+	Mark1=newMark3;
+        
+	Mark1=newMark4;
+    
+}
+    
+
+    function SetSubmissionDetails(string newName, uint256 newRollNo, string newStatus, uint256 newMark1,uint256 newMark2,uint256 newMark3,uint256 newMark4) 
+public{
+        
+Name= newName;
+        
+RollNo= newRollNo;
+        
+Status= newStatus;
+        
+
+Mark1=newMark1;
+   
+Mark1=newMark2;
+        
+Mark1=newMark3;
+        
+Mark1=newMark4;
+    
+}
+    
+
+
+    function GetSubmissionDetails()public view returns(string,uint256,string)
+{
+        
+
+        return(Name,RollNo,Status);
+    
+}
+    
+
+}
+
+
+output 
+
+
+call to Submissionrecord.Name
+CALL
+[call]from:0x5136A993200c482cb9D3e509DC2F53163b72d77cto:Submissionrecord.Name()data:0x805...2474d
+call to Submissionrecord.RollNo
+CALL
+[call]from:0x5136A993200c482cb9D3e509DC2F53163b72d77cto:Submissionrecord.RollNo()data:0xc52...3803d
+call to Submissionrecord.Status
+CALL
+[call]from:0x5136A993200c482cb9D3e509DC2F53163b72d77cto:Submissionrecord.Status()data:0x45f...09ce9
+call to Submissionrecord.GetSubmissionDetails
+CALL
+[call]from:0x5136A993200c482cb9D3e509DC2F53163b72d77cto:Submissionrecord.GetSubmissionDetails()data:0x741...bec98
+creation of Submissionrecord pending...
+[vm]from:0x513...2d77cto:Submissionrecord.(constructor)value:0 weidata:0x606...00000logs:0hash:0x7cd...f2c4b
+creation of Submissionrecord pending...
+creation of Submissionrecord pending...
+[vm]from:0x513...2d77cto:Submissionrecord.(constructor)value:0 weidata:0x606...00000logs:0hash:0x834...f788c
+ status 	0x1 Transaction mined and execution succeed
+ transaction hash 	0x834f248cebe45347cc9472c47c83c2079391ece1357ee4a066585c11788f788c
+ contract address 	0x16800b5cbcf0bbc9cdfa09a1bb935e7a03d2f283
+ from 	0x5136a993200c482cb9d3e509dc2f53163b72d77c
+ to 	Submissionrecord.(constructor)
+ gas 	3000000 gas 
+ transaction cost 	666877 gas 
+ execution cost 	463449 gas 
+ hash 	0x834f248cebe45347cc9472c47c83c2079391ece1357ee4a066585c11788f788c
+ input 	0x606...00000
+ decoded input 	{
+	"string newName": "Rahul",
+	"uint256 newRollNo": {
+		"_hex": "0x0c"
+	},
+	"string newStatus": "pass",
+	"uint256 newMark1": {
+		"_hex": "0x1e"
+	},
+	"uint256 newMark2": {
+		"_hex": "0x1e"
+	},
+	"uint256 newMark3": {
+		"_hex": "0x20"
+	},
+	"uint256 newMark4": {
+		"_hex": "0x23"
+	}
+}
+ decoded output 	 - 
+ logs 	[]
+ value 	0 wei 
+>
